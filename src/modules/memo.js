@@ -4,6 +4,7 @@ const initalState = {
             id:1, name: "green", desc:"방명록을 작성했습니다"
         },
     ],
+    date: new Date(),
     id:2
 }
 export const createMemo = (memo)=>({type:"createMemo", payload:memo})

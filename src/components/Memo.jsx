@@ -8,7 +8,8 @@ const Memo = () => {
     const [name,setName] = useState("")
     const [desc,setDesc] = useState("")
 
-    const date = new Date();
+    const date = useSelector((state)=>(state.memo.date))
+
     const dispatch = useDispatch();
     const addMemo = ()=>{dispatch(createMemo({name:name, desc:desc}))}
     return (  
